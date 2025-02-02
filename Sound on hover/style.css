@@ -1,0 +1,60 @@
+/* Anuj Builds */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+header {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section:nth-child(odd) {
+  background: #bdaeff;
+}
+
+section:nth-child(even) {
+  background: #a8c8ff;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.1s ease;
+}
+
+#scrollToTopBtn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: scale(1.1);
+}
+
+#scrollToTopBtn:active {
+  transform: scale(0.9);
+}
