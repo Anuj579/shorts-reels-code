@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    --color: rgba(0, 255, 0, 0.04);
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+.box {
+    border: 5px solid #0f0;
+    border-radius: 10px;
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+#key {
+    color: red;
+    font-size: 38px;
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 15px red;
+    }
+
+    100% {
+        opacity: .7;
+        text-shadow: 0 0 5px red;
+    }
+}
