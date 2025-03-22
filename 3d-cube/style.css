@@ -1,0 +1,71 @@
+/* Anuj Builds */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1a1a, #000000);
+    margin: 0;
+    overflow: hidden;
+}
+
+.scene {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg);
+    transition: transform 0.1s linear;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.face {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: translateZ(150px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
